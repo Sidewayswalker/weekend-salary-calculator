@@ -1,22 +1,32 @@
+
+let totalMonthlyCost = 0
+
 function createEmployee(event) {
     event.preventDefault();
 
-    let firstNameText = document.getElementById("first name").value;
-    let lastNameText = document.getElementById("last name").value;
-    let idNumberText= document.getElementById("id number").value;
-    let jobTitleText = document.getElementById("job title").value;
-    let annualSalaryText = document.getElementById("annual salary").value;
+    let firstNameInput = document.getElementById("first name").value;
+    let lastNameInput = document.getElementById("last name").value;
+    let idNumberInput = document.getElementById("id number").value;
+    let jobTitleInput = document.getElementById("job title").value;
+    let annualSalaryInput = document.getElementById("annual salary").value;
 
     let newTableRow = `
     <tr>
-      <td>${firstNameText}</td>
-      <td>${lastNameText}</td>
-      <td>${idNumberText}</td>
-      <td>${jobTitleText}</td>
-      <td>${annualSalaryText}</td>
+      <td>${firstNameInput}</td>
+      <td>${lastNameInput}</td>
+      <td>${idNumberInput}</td>
+      <td>${jobTitleInput}</td>
+      <td>${annualSalaryInput}</td>
+      <td><button onclick="deleteRow(event)">❌</button></td>
     </tr>
     `
 
     let tableLocation = document.getElementById("employeeTable");
     tableLocation.innerHTML += newTableRow
 }
+
+function deleteRow(event) {
+    let buttonclicked = event.target;
+    let toDelete = buttonclicked.parentElement.parentElement;
+    toDelete.remove();
+  }
