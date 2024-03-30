@@ -35,6 +35,10 @@ function createEmployee(event) {
     let salarySum = document.getElementById('salary-Count')
     salarySum.innerText = totalMonthlyCost;
 
+    if (totalMonthlyCost > 20000){
+        document.getElementById("footer").style.background = "red";
+    }
+
 }
 
 
