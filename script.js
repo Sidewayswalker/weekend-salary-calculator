@@ -34,11 +34,10 @@ function createEmployee(event) {
 
     let salarySum = document.getElementById('salary-Count')
     salarySum.innerText = totalMonthlyCost;
-
+    
     if (totalMonthlyCost > 20000){
-        document.getElementById("footer").style.background = "red";
+        document.getElementsByClassName("over-budget").style.background = "red";
     }
-
 }
 
 
@@ -46,6 +45,4 @@ function deleteRow(event) {
     let buttonclicked = event.target;
     let toDelete = buttonclicked.parentElement.parentElement;
     toDelete.remove();
-
-
   }

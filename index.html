@@ -29,7 +29,7 @@
           data-testid="idInput"
           id="id number"
           placeholder="ID number "
-          type="text">
+          type="number">
         <input
           data-testid="titleInput"
           id="job title"
@@ -41,7 +41,7 @@
           placeholder="annual salary"
           type="text">
 
-        <button onclick="createEmployee(event)">Submit</button>
+        <button data-testid="submitButton" onclick="createEmployee(event)">Submit</button>
 
       </form>
     <h2>Current Employees</h2>
@@ -61,7 +61,7 @@
           </tbody>
       </table>
   </main>
-  <footer id="footer">
+  <footer class="over-budget">
     <p>Total Monthly Cost: $<span id="salary-Count">0</span></p>
   </footer>
 </body>
