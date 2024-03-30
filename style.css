@@ -1,8 +1,20 @@
-h2 {
-    align-content: center;
+body {
+    background: rgb(210, 201, 201);
 }
-table {
+h1 {
+    text-align: center;
+    background-color: rgb(43, 212, 116);
+}
+h2 {
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+.Table1 {
     background-color:rgb(210, 201, 201);
+    margin-left: auto;
+    margin-right: auto;
 }
 th {
     background-color:rgb(168, 237, 237);
@@ -16,4 +28,8 @@ th {
 td {
     background-color:bisque;
     border: 2px;
+}
+footer {
+    text-align: center;
+    background-color: rgb(241, 229, 61);
 }

@@ -23,6 +23,12 @@ function createEmployee(event) {
 
     let tableLocation = document.getElementById("employeeTable");
     tableLocation.innerHTML += newTableRow
+
+    document.getElementById('first name').value = '';
+    document.getElementById('last name').value = '';
+    document.getElementById('id number').value = '';
+    document.getElementById('job title').value = '';
+    document.getElementById('annual salary').value = '';
 }
 
 function deleteRow(event) {
