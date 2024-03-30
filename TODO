@@ -1,0 +1,15 @@
+WEEKEND ASSIGNMENT
+1. Form w/ 5 inputs that collect a new employee's 
+    - first name
+    - last name
+    - ID Number
+    - job title
+    - annual salary
+2. When the "Submit" button is clicked:
+    - A new employee row should be added to the table.
+    - The footer's total monthly cost should be updated.
+    - The form inputs should be cleared out.
+3. FOOTER ELEMENT - if the ("monthly cost" > $20,000) apply an 'over-budget' CSS class to the footer
+    - when applied, this CSS class sohuld provide a clear visual indication that the monthly cost has been exceeded ("monthly cost" text turns the color red)
+4. Create a "Delete" button that removes an employee form the DOM.
+    - monthly cost does not need to be udpated upon delete of employee.
