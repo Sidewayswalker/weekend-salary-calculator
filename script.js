@@ -1,5 +1,5 @@
 
-let totalMonthlyCost = 0
+let totalMonthlyCost = 0;
 
 function createEmployee(event) {
     event.preventDefault();
@@ -21,7 +21,7 @@ function createEmployee(event) {
     </tr>
     `
 
-    let tableLocation = document.getElementById("employeeTable");
+    let tableLocation = document.getElementById("employee-Table");
     tableLocation.innerHTML += newTableRow
 
     document.getElementById('first name').value = '';
@@ -29,10 +29,19 @@ function createEmployee(event) {
     document.getElementById('id number').value = '';
     document.getElementById('job title').value = '';
     document.getElementById('annual salary').value = '';
+
+    totalMonthlyCost += Math.round(Number(annualSalaryInput)/12);
+
+    let salarySum = document.getElementById('salary-Count')
+    salarySum.innerText = totalMonthlyCost;
+
 }
+
 
 function deleteRow(event) {
     let buttonclicked = event.target;
     let toDelete = buttonclicked.parentElement.parentElement;
     toDelete.remove();
+
+
   }
