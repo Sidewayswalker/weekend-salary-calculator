@@ -1,4 +1,3 @@
-
 let totalMonthlyCost = 0;
 
 function createEmployee(event) {
@@ -33,16 +32,19 @@ function createEmployee(event) {
     totalMonthlyCost += Math.round(Number(annualSalaryInput)/12);
 
     let salarySum = document.getElementById('salary-Count')
-    salarySum.innerText = totalMonthlyCost;
-    
-    if (totalMonthlyCost > 20000){
-        document.getElementsByClassName("over-budget").style.background = "red";
+    salarySum.textContent = totalMonthlyCost;
+
+    if(totalMonthlyCost > 20000){
+      let theFooter = document.getElementsByClassName("over-budget");
+      for (let i=0; i<theFooter.length; i++){
+        theFooter[i].style.background = "red";
+      }
     }
 }
-
 
 function deleteRow(event) {
     let buttonclicked = event.target;
     let toDelete = buttonclicked.parentElement.parentElement;
     toDelete.remove();
   }
+  
