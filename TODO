@@ -13,3 +13,5 @@ WEEKEND ASSIGNMENT
     - when applied, this CSS class should provide a clear visual indication that the monthly cost has been exceeded ("monthly cost" text turns the color red)
 4. Create a "Delete" button that removes an employee form the DOM.
     - monthly cost does not need to be udpated upon delete of employee.
+5. STRETCH: when you remove a line from the table..
+    - update the "Total Monthly Cost"
