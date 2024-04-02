@@ -1,9 +1,13 @@
 body {
     background: rgb(210, 201, 201);
+    padding-left: 130px;
+    padding-right: 130px;
 }
 h1 {
     text-align: center;
     background-color: rgb(43, 212, 116);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 h2 {
     text-align: center;
@@ -32,4 +36,9 @@ td {
 footer {
     text-align: center;
     background-color: rgb(241, 229, 61);
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
+.over-budget {
+    background-color: red;
+  }

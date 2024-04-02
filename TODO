@@ -13,5 +13,10 @@ WEEKEND ASSIGNMENT
     - when applied, this CSS class should provide a clear visual indication that the monthly cost has been exceeded ("monthly cost" text turns the color red)
 4. Create a "Delete" button that removes an employee form the DOM.
     - monthly cost does not need to be udpated upon delete of employee.
-5. STRETCH: when you remove a line from the table..
-    - update the "Total Monthly Cost"
+5. STRETCH: 
+    - Upon creating a new table row..
+    - Store the values of annualSalaryInput inside of a G-array . 
+    - Set the Sum of the global array to equal the "totalMonthlyCost" 
+    - totalMonthlyCost -= annualSalaryInput[i]
+
+    https://github.com/PrimeAcademy/biscayne_weekend_salary_calculator_live_solve/tree/main
